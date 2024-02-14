@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&display=swap" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+   
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="bg-image" > 
+      <img src="./images/bg-main-desktop.png"/> 
+      <img class="card-front" src="./images/bg-card-front.png"/>
+      <img class="card-back" src="./images/bg-card-back.png"/>
+      <p class="cardnum">0000 0000 0000 0000</p>
+      <p class="cardname">YOUR NAME</p>
+      <p class="expiry">MM/YY</p>
+      <p class="cvv">000</p>
+      <div class="circle"></div>
+      <div class="circle2"></div>
+    </div>
+    <div class="form-container" >
+      <form id="form">
+        <label for="name">
+          CARDHOLDER NAME
+        </label>
+        <input type="text" class="namenum"  id="cn" placeholder="E.g. Somdeep Misra" />
+        <p class="validator nameer"></p>
+        <label for="number">
+          CARD NUMBER
+        </label>
+        <input type="text" class="namenum" id="cnum" placeholder="E.g. 1234 1234 1234 1234" />
+        <p class="validator numer"></p>
+        <label for="name" >
+          EXP. DATE   (MM/YY) 
+        </label>
+        <label for="name" style="margin-left: 40px;">
+          CVC
+        </label>
+        <br/>
+        <input type="text" class="line mm"  placeholder="MM" style="width: 40px;"/>
+        <input type="text" class="line yy"  placeholder="YY" style="width: 40px;" />
+        <input type="text" class="line cvc"  placeholder="CVC" style="width: 60px;margin-left: 40px;" />    
+        <div style="display: flex;">
+            <p class="validator exper" class="myer" style="flex-basis:100px;"></p>
+            <p class="validator cvver"  style="margin-left: 30px;"></p>
+        </div>
+        <button class="button" type="button"> Confirm</button>
+      </form>
+    </div>
+  </div>
+<script src="./index.js"></script>
+</body>
+</html>
